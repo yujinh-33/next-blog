@@ -1,4 +1,5 @@
 import {Fragment} from "react";
+import Head from "next/head";
 
 import Hero from "../components/home-page/hero";
 import FeaturedPosts from "../components/home-page/featured-posts";
@@ -16,6 +17,10 @@ interface IProps {
 const HomePage: FC<IProps> = (props) => {
   return (
     <Fragment>
+      <Head>
+        <title>Yujinh' Blog</title>
+        <meta name="description" content="I post about programming and web development." />
+      </Head>
       <Hero />
       <FeaturedPosts posts={props.featuredPosts} />
     </Fragment>

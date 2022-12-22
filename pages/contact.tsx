@@ -1,4 +1,8 @@
-import type {FC, ReactNode} from "react";
+import {Fragment} from "react";
+import Head from "next/head";
+
+import ContactForm from "../components/contact/contact-form";
+import {FC, ReactNode} from "react";
 
 interface IProps {
   children?: ReactNode;
@@ -6,9 +10,13 @@ interface IProps {
 
 const ContactPage: FC<IProps> = () => {
   return (
-    <div>
-      <h1>The Contact Page</h1>
-    </div>
+    <Fragment>
+      <Head>
+        <title>Contact Me</title>
+        <meta name="description" content="Send me your messages!" />
+      </Head>
+      <ContactForm />
+    </Fragment>
   );
 };
 

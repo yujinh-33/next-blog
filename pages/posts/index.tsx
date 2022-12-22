@@ -1,3 +1,6 @@
+import {Fragment} from "react";
+import Head from "next/head";
+
 import AllPosts from "../../components/posts/all-posts";
 import {getAllPosts} from "../../lib/posts-util";
 
@@ -11,7 +14,15 @@ interface IProps {
 }
 
 const AllPostsPage: FC<IProps> = (props) => {
-  return <AllPosts posts={props.posts} />;
+  return (
+    <Fragment>
+      <Head>
+        <title>All Posts</title>
+        <meta name="description" content="A list of all programming-related tutorials and posts!" />
+      </Head>
+      <AllPosts posts={props.posts} />
+    </Fragment>
+  );
 };
 
 export const getStaticProps: GetStaticProps = async () => {

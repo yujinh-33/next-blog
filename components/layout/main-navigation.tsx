@@ -17,10 +17,10 @@ const MainNavigation: FC<IProps> = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/posts">所有帖子</Link>
+            <Link href="/posts">Posts</Link>
           </li>
           <li>
-            <Link href="/contact">联系我们</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

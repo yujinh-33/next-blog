@@ -21,7 +21,7 @@ const Hero: FC<IProps> = () => {
               33vw"
         />
       </div>
-      <h1>嗨, 我是周璨</h1>
+      <h1>嗨, 我是 Yujinh</h1>
       <p>我的博客是关于web开发 - 特别是React相关的帖子, 并且还有部分NodeJS的帖子.</p>
     </section>
   );

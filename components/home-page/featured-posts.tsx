@@ -11,7 +11,7 @@ interface IProps {
 const FeaturedPosts: FC<IProps> = (props) => {
   return (
     <div className={classes.latest}>
-      <h2>特色帖子</h2>
+      <h2>Featured Posts</h2>
       <PostsGrid posts={props.posts} />
     </div>
   );
