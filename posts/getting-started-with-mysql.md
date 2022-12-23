@@ -1,7 +1,7 @@
 ---
 title: "MySQL入门"
 date: "2022-12-21"
-image: "getting-started-mysql.png"
+image: "getting-started-mysql.jpg"
 excerpt: "MySQL HeatWave. MySQL数据库服务是一个完全托管的数据库服务，可使用世界上最受欢迎的开源数据库来部署云原生应用程序。 它是百分百由MySQL原厂开发，管理和提供支持"
 isFeatured: false
 ---
