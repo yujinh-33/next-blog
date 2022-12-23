@@ -6,7 +6,7 @@
   color: var(--color-grey-50);
 }
 
-@media (min-width: 425px) {
+@media (max-width: 768px) {
   .logo::before {
     content: "Blog";
   }
