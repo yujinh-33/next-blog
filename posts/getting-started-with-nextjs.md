@@ -1,8 +1,8 @@
 ---
-title: "Getting Started with NextJS"
+title: "NextJS入门"
 date: "2022-10-16"
 image: "getting-started-nextjs.jpg"
-excerpt: "NextJS is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR."
+excerpt: "Next.js为您提供了最佳的开发体验，提供了生产所需的所有功能:混合静态和服务器呈现，TypeScript支持，智能捆绑，路由预抓取等等。不需要配置。"
 isFeatured: true
 ---
 

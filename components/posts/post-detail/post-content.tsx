@@ -43,9 +43,13 @@ const PostContent: FC<IProps> = (props) => {
     },
     code(code: any) {
       const {className, children} = code;
-      const language = className.replace("language-", "");
 
-      return <SyntaxHighlighter style={atomDark} language={language} children={children} />;
+      if (className) {
+        const language = className.replace("language-", "");
+        return <SyntaxHighlighter style={atomDark} language={language} children={children} />;
+      }
+
+      return children;
     },
   };
 
