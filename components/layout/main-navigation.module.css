@@ -1,5 +1,5 @@
 .header {
-  @apply container h-12  flex justify-between items-center px-5 sm:h-24;
+  @apply h-12  flex justify-between items-center px-5 sm:h-24 sm:text-xl;
   background-color: var(--color-grey-900);
 }
 
@@ -8,26 +8,16 @@
 }
 
 .header li {
-  margin: 0 var(--size-3);
+  @apply my-0 mx-1 sm:mx-4;
 }
 
 .header a {
+  @apply text-base sm:text-xl;
   color: var(--color-grey-100);
-  font-size: var(--size-4);
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
   color: var(--color-grey-200);
-}
-
-@media (min-width: 768px) {
-  .header a {
-    font-size: var(--size-5);
-  }
-
-  .header li {
-    margin: 0 var(--size-4);
-  }
 }

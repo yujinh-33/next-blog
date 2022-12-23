@@ -1,12 +1,8 @@
 .contact {
-  margin: var(--size-8) auto;
-  border-radius: 6px;
-  background-color: var(--color-grey-100);
-  width: 90%;
-  max-width: 50rem;
-  padding: var(--size-4);
+  @apply my-8 mx-auto rounded w-11/12 max-w-3xl p-4;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   font-size: var(--size-6);
+  background-color: var(--color-grey-100);
 }
 
 .contact h1 {
@@ -17,7 +13,7 @@
 
 .form label {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   margin: var(--size-2) 0 var(--size-1) 0;
 }

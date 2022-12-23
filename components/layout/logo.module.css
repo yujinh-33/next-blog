@@ -1,22 +1,5 @@
 .logo {
-  text-transform: uppercase;
-  font-size: var(--size-5);
-  font-weight: bold;
+  @apply uppercase font-bold text-xl sm:text-3xl;
   font-family: "Oswald", sans-serif;
   color: var(--color-grey-50);
-}
-
-@media (max-width: 768px) {
-  .logo::before {
-    content: "Blog";
-  }
-}
-
-@media (min-width: 768px) {
-  .logo {
-    font-size: var(--size-8);
-  }
-  .logo::before {
-    content: "Yujinh' Next Blog";
-  }
 }
