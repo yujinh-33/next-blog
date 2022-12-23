@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Git"
+title: "Git入门"
 date: "2022-12-21"
 image: "getting-started-git.jpg"
 excerpt: "git是一个分布式版本控制软件，最初由林纳斯·托瓦兹创作，于2005年以GPL许可协议发布。最初目的是为了更好地管理Linux内核开发而设计。"

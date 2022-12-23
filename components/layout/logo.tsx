@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const Logo: FC<IProps> = () => {
-  return <div className={classes.logo}>Yujinh' Next Blog</div>;
+  return <div className={classes.logo}></div>;
 };
 
 export default Logo;
