@@ -11,7 +11,7 @@ const PostsGrid: FC<IProps> = (props) => {
   const {posts} = props;
 
   return (
-    <ul className={classes.grid}>
+    <ul className={classes.posts}>
       {posts.map((post) => (
         <PostItem key={post.slug} post={post} />
       ))}
