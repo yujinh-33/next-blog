@@ -1,48 +1,13 @@
 .header {
-  padding-bottom: var(--size-8);
+  @apply pb-8 my-4 mx-0 flex justify-between items-center gap-4;
   border-bottom: 8px solid var(--color-primary-100);
-  margin: var(--size-4) 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
 }
 
 .header h1 {
-  font-size: var(--size-8);
+  @apply m-0 text-3xl md:text-5xl;
   color: var(--color-primary-500);
-  margin: 0;
-  line-height: initial;
-  text-align: center;
 }
 
 .header img {
-  object-fit: cover;
-  width: 200px;
-  height: 120px;
-}
-
-@media (min-width: 768px) {
-  .header {
-    margin: var(--size-8) 0;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .header h1 {
-    font-size: var(--size-16);
-    text-align: left;
-  }
-}
-
-@media (max-width: 375px) {
-  .header {
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .header img {
-    width: 100%;
-  }
+  @apply object-cover w-48 h-32 hidden md:block;
 }
