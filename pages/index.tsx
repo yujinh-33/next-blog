@@ -27,7 +27,9 @@ const HomePage: FC<IProps> = (props) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async (context) => {
+  console.log(context.params);
+
   const featuredPosts = getFeaturedPosts();
 
   return {
