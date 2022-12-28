@@ -1,6 +1,8 @@
 import Link from "next/link";
-import Logo from "./logo";
+import classNames from "classnames";
 
+import Logo from "./logo";
+import BarsIcon from "./bars";
 import classes from "./main-navigation.module.css";
 import type {FC, ReactNode} from "react";
 
@@ -15,6 +17,9 @@ const MainNavigation: FC<IProps> = () => {
         <Logo />
       </Link>
       <nav>
+        <div className={classes.icon}>
+          <BarsIcon />
+        </div>
         <ul>
           <li>
             <Link href="/posts">Posts</Link>

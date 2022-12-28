@@ -1,10 +1,16 @@
 .header {
-  @apply h-12  flex justify-between items-center px-5 sm:h-24 sm:text-xl;
   background-color: var(--color-grey-900);
+  @apply h-12 relative flex justify-between items-center px-5 sm:h-24 sm:text-xl;
+}
+
+.header .icon {
+  @apply w-6 h-6 text-white sm:hidden;
 }
 
 .header ul {
-  @apply list-none flex items-baseline m-0 p-0;
+  background-color: var(--color-grey-900);
+  @apply fixed right-0 m-0 p-0 list-none flex-col hidden
+  sm:static sm:flex sm:flex-row sm:items-baseline;
 }
 
 .header li {
@@ -14,6 +20,19 @@
 .header a {
   @apply text-base sm:text-xl;
   color: var(--color-grey-100);
+}
+
+.header nav:hover ul {
+  @apply flex right-0 top-0 w-2/5 bottom-0 z-10;
+}
+
+.header nav:hover ul::before {
+  content: "";
+  height: 48px;
+}
+
+.header nav:hover ul li {
+  @apply px-4 py-2;
 }
 
 .header a:hover,
