@@ -1,9 +1,9 @@
 ---
 title: "TailwindCSS入门"
 date: "2022-12-16"
-image: "getting-started-nextjs.jpg"
+image: "getting-started-tailwindcss.jpg"
 excerpt: "tailwindcss"
-isFeatured: true
+isFeatured: false
 ---
 
 # Tailwind CSS
